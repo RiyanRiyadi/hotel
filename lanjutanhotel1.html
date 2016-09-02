@@ -1,0 +1,395 @@
+<html lang="en">
+    <head>
+      <body background="m.jpg">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>hotel</title>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <style type="text/css">
+      .container {
+      width: 100%;
+      margin: 0 auto 0 auto;
+      }
+      .con-child{
+      width: 900px;
+      }
+      .con-parent {
+      width: 760px;
+      }
+      .breadcrumb {
+      background-color: #F3EDED;
+      list-style: none outside none;
+      overflow: hidden;
+      }
+      .breadcrumb li {
+      float: left;
+      }
+      .breadcrumb li:first-child a {
+      padding-left: 10px;
+      }
+      .breadcrumb li a {
+      color: #f21818;
+      text-decoration: none;
+      padding: 10px 0 10px 55px;
+      background: hsl(0, 36%, 96%);
+      position: relative;
+      display: block;
+      float: left;
+      }
+      .breadcrumb li:last-child a {
+      background: white !important;
+      color: black;
+      pointer-events: none;
+      cursor: default;
+      }
+      .breadcrumb li a::before {
+      content: " ";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-left: 30px solid white;
+      position: absolute;
+      top: 50%;
+      margin-top: -50px;
+      left: 100%;
+      z-index: 1;
+      }
+      .breadcrumb li:last-child a::after {
+      border: 0;
+      }
+      .breadcrumb li a::after {
+          content: " ";
+          display: block;
+          width: 0;
+          height: 0;
+          border-left: 30px solid white;
+          position: absolute;
+          top: 50%;
+          margin-top: -50px;
+          left: 100%;
+          z-index: 2;
+      }
+      .big {
+      border-radius: 0 0 0 16px;
+      width: 760px;
+      height: 330px;
+      }
+      .image-frame {
+      border: 1px solid #FFFFFF;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+      }
+      #head-bar {
+      height: 77px;
+      position: relative;
+      top: -77px;
+      border-radius: 0 0 0 16px;
+      }
+      #menu-nav {
+      float: left;
+      margin-top: 40px;
+      width: 330px;
+      }
+      #menu-nav div:first-child {
+      margin-left: 18px;
+      }
+      .menu-nav-icon {
+      float: left;
+      width: 26px;
+      }
+      .menu-nav-icon img {
+      margin-left: 5px;
+      margin-top: 3px;
+      }
+      .bar-info {
+      float: left;
+      padding-left: 10px;
+      }
+      .standard-text {
+          font-size: 14px;
+          color: #fff;
+      }
+      #bar-info-caption {
+      color: #FFFFFF;
+      float: right;
+      font-weight: bold;
+      padding-right: 10px;
+      padding-top: 20px;
+      width: 288px;
+      }
+      #content-main {
+      background: url('az.jpg') no-repeat scroll left top transparent;
+      font-size: 13px;
+      margin-top: 3px;
+      padding: 11px 15px 0;
+      }
+      #content-main {
+      font-size: 13px;
+      }
+      .caption-text-small {
+      font-size: 18px;
+      color: yellow;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      }
+
+      .container-main {
+          background-color: grey;
+          margin: 20px auto 0;
+      }
+      .container-main-header-child {
+      background-color: #0E0D0D;
+      padding-left: 67px;
+      }
+      .container-main-header {
+      background-color: black;
+      }
+      #logo {
+      float: left;
+      width: 100px;
+      }
+      #header-menu{
+      padding:15px ;
+      float: left;
+      margin-top: 47px;
+      }
+      #header-menu ul {
+      color: #fff;
+      list-style: none outside none;
+      margin: 0;
+      padding: 0;
+      }
+      #header-menu ul li :first-child {
+      margin-left: 0;
+      color: #fff;
+      }
+      #header-menu ul li {
+          float: left;
+          margin-left: 40px;
+      }
+      #header-menu ul {
+          color: #fff;
+          list-style: none outside none;
+      }
+      .clear {
+      clear: both;
+      }
+      #slider {
+      background-color: blue;
+      height: 400px;
+      position: relative;
+      }
+      #button-slide-left {
+      position: absolute;
+      left: -40px;
+      top: 135px;
+      }
+      #button-slide-right {
+      position: absolute;
+      right: -38px;
+      top: 135px;
+      }
+      #slide-image{
+        float: left;
+        height: 330px;
+        width: 760px;
+        top:0px;
+        left: 0px;
+        position: absolute;
+      }
+      #slide-bar {
+      background-image: url('az.jpg');
+      height: 87px;
+      position: relative;
+      top: 323px;
+      }
+      #menu-nav-index {
+      float: left;
+      margin-top: 14px;
+      margin-left: 18px;
+      width: 455px;
+      }
+      .menu-nav-text-index {
+      color: #FFFFFF;
+      float: left;
+      font-weight: bold;
+      margin-left: 15px;
+      white-space: pre-line;
+      width: 300px;
+      }
+      .clear {
+      clear: both;
+      }
+      .panel-container {
+      float: right;
+      }
+      .clear {
+      clear: both;
+      }
+      #panel-book-show {
+      left: 471px;
+      position: absolute;
+      top: 315px;
+      width: 196px;
+      }
+      .panel-book-form {
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 3px;
+      width: 200px;
+      }
+      .panel-book-input-show {
+      border: 1px solid #988F8F;
+      }
+      .select {
+      color: #fff;
+      background-color: #363636;
+      width: 176px;
+      }
+      .box-info:first-child {
+      margin-left: 0;
+      }
+      .fixed-height {
+          height: 278px;
+          width: 335px;
+      }
+      .box-info {
+          background: none repeat scroll 0 0 #EBEBEB;
+          border: 1px solid #CCCCCC;
+          color: #363636;
+          float: left;
+          font-size: 11px;
+          margin-left: 15px;
+          padding: 10px 10px 2px;
+      }
+      .content-main{
+      font-size: 13px;
+      }
+          
+      </style>
+  </head>
+    <body>
+      <div class="container">
+          <div class="container-main con-child">
+                    <div class="container-main-header-child">
+                      <div id="logo"><a href="./"><img src="ry.jpg"width="100"></a></div>
+                      <div id="header-menu">
+                        <ul>
+                          <li><a href="" class="al al-bold">Hotel</a></li>
+                          <li><a href="" class="al al-bold">Residence</a></li>
+                          <li><a href="" class="al al-bold">Facilities</a></li>
+                          <li><a href="" class="al al-bold">Location</a></li>
+                          <li><a href="" class="al al-bold">Gallery</a></li>
+                          <li><a href="" class="al al-bold">Promotion</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+                    <div class="container-main con-parent">
+                      <div style="color: black;">
+                        <h1>The Riyan Homes Hotel</h1>
+                      </div>
+                      <div>
+                        <ul class="breadcrumb">
+                          <li>
+                            <a href="Riyanhotel.html">
+                              Home
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <b>Hotel</b>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="image-frame big">
+                        <img src="rc.jpg"></img>
+                        <div id="head-bar">
+                          <div id="menu-nav">
+                            <div id="button-room" class="menu-nav-icon">
+                              <img src="camera.png"></img>
+                            </div>
+                            <div class="bar-info-standard-text">
+                              front view of the riyan homes hotel
+                            </div>
+                          </div>
+                          <div id="bar-info-caption">
+                            we have the right facilities to meet your business travel need
+                          </div>
+                          <div class="clear"></div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="clear"></div>
+                      <div class="content-main">
+                        <div>
+                          <p>Perfectly situated properties offering levels of service, accommodation, comfort and cuisine that stretch expectation, all with more than a hint of individuality. Suitable for business or leisure with facilities that provides ideal venues for weddings, ceremonies, conferences and meetings. 
+                          </p>
+                          <p>With two common type (studio and standard) and more than five different room combination, there's always a place for you at Cherry Homes.
+                          </p>
+                          <p>
+                             <b> Meeting, Conference, Training and Business Travel.</b>
+                            Whether you plan to meet or held a seminar, chances are we have the right facilities to meet your business travel needs 
+                          </p>
+                        </div>
+                        <div class=-"caption-text-small">Room Types</div>
+                        <div id="box-container">
+                          <div class="box-info fixed-height">
+                            <div class="image-frame extra-large">
+                              <img src="a.jpg"></img>
+                              <a href=".html">
+                                <div class="info-menu-bar">
+                                  <div class="info-menu-text">Deluxe Room</div>
+                                  <div class="info-menu-icon">
+                                    <img src=".png"></img>
+                                  </div>
+                                  <div class="clear"></div>
+                                </div>
+                              </a>
+                            </div>
+                            <p class="info-room-detail">
+                              Efficient room type for most business people that keep moving, or for those who want to enjoy their stay at our express hotel. Regardless your needs, our deluxe room can easily meet your needs!! 
+                            </p>
+                          </div>
+                          <div class="box-info fixed-height">
+                            <div class="image-frame extra-large">
+                              <img src="b.jpg"></img>
+                              <a href=".html">
+                                <div class="info-menu-bar">
+                                  <div class="info-menu-text">Deluxe Room</div>
+                                  <div class="info-menu-icon">
+                                    <img src=".png"></img>
+                                  </div>
+                                  <div class="clear"></div>
+                                </div>
+                              </a>
+                            </div>
+                            <p class="info-room-detail">
+                              Efficient room type for most business people that keep moving, or for those who want to enjoy their stay at our express hotel. Regardless your needs, our deluxe room can easily meet your needs!! 
+                            </p>
+                          </div>
+                        </div>
+                        <div></div>
+                        <div id="box-container"></div>
+                        <div></div>
+                      </div>
+                    </div>
+                  
+        
+                  
+          </div>
+      <div>
+    </body>
+</html> 
