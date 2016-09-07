@@ -7,8 +7,8 @@
       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
       <title>hotel</title>
       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
       <!-- Bootstrap -->
       <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,18 +17,147 @@
       width: 100%;
       margin: 0 auto 0 auto;
       }
+      .con-child{
+      width: 760px;
+      }
       .con-parent {
       width: 760px;
       }
+      .con-parent h1{
+        font-size: 36px;
+        margin-left: 20px;
+      }
+      .breadcrumb {
+      background-color: #F3EDED;
+      list-style: none outside none;
+      overflow: hidden;
+      }
+      .breadcrumb li {
+      float: left;
+      }
+      .breadcrumb li:first-child a {
+      padding-left: 10px;
+      }
+      .breadcrumb li a {
+      color: #f21818;
+      text-decoration: none;
+      padding: 10px 0 10px 55px;
+      background: hsl(0, 36%, 96%);
+      position: relative;
+      display: block;
+      float: left;
+      }
+      .breadcrumb li:last-child a {
+      background: white !important;
+      color: black;
+      pointer-events: none;
+      cursor: default;
+      }
+      .breadcrumb li a::before {
+      content: " ";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-left: 30px solid white;
+      position: absolute;
+      top: 50%;
+      margin-top: -50px;
+      left: 100%;
+      z-index: 1;
+      }
+      .breadcrumb li:last-child a::after {
+      border: 0;
+      }
+      .breadcrumb li a::after {
+          content: " ";
+          display: block;
+          width: 0;
+          height: 0;
+          border-left: 30px solid white;
+          position: absolute;
+          top: 50%;
+          margin-top: -50px;
+          left: 100%;
+          z-index: 2;
+      }
+      .big {
+      border-radius: 0 0 0 16px;
+      width: 760px;
+      height: 330px;
+      }
+      .image-frame {
+      border: 1px solid #FFFFFF;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+      }
+      #head-bar {
+      background-image: url('abu.png');
+      height: 77px;
+      position: relative;
+      top: -77px;
+      border-radius: 0 0 0 16px;
+      }
+      #menu-nav {
+      float: left;
+      margin-top: 40px;
+      width: 330px;
+      }
+      #menu-nav div:first-child {
+      margin-left: 18px;
+      }
+      .menu-nav-icon {
+      float: left;
+      width: 26px;
+      }
+      .menu-nav-icon img {
+      margin-left: 5px;
+      margin-top: 3px;
+      }
+      .bar-info {
+      float: left;
+      padding-left: 10px;
+      }
+      .standard-text {
+          font-size: 14px;
+          color: #0f0101;
+      }
+      #bar-info-caption {
+      color: #0f0101;
+      float: right;
+      font-size: 16;
+      padding-right: 10px;
+      padding-top: 20px;
+      width: 288px;
+      }
+      #content-main {
+      font-size: 13px;
+      margin-top: 3px;
+      padding: 11px 15px 0;
+      }
+      #content-main {
+      font-size: 13px;
+      }
+      .caption-text-small {
+      font-size: 18px;
+      color:  black;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      }
+
       .container-main {
-          background-color: #FFFFFF;
-          margin: 20px auto 0;
+          background-color: grey;
+          margin: 0px auto 0;
+      }
+      .container-main-header-child {
+      background-color: #0E0D0D;
+      padding-left: 0px;
       }
       .container-main-header {
       background-color: black;
       }
       #logo {
-        color: yellow;
       float: left;
       width: 100px;
       }
@@ -46,6 +175,10 @@
       #header-menu ul li :first-child {
       margin-left: 0;
       color: #fff;
+      }
+      .al-bold {
+      font-weight: bold;
+      font-size: 15px;
       }
       #header-menu ul li {
           float: left;
@@ -131,216 +264,236 @@
       background-color: #363636;
       width: 176px;
       }
-      #info {
-      background: green;
+      .box-info:first-child {
+      margin-left: 0;
       }
-      #info-header {
-      padding: 22px;
-      font-size: 14px;
-      background-color: #DEDEDE;
+      .fixed-height {
+          height: 278px;
+          width: 335px;
       }
-      #info-left {
+      .box-info {
+          background: none repeat scroll 0 0 #EBEBEB;
+          border: 1px solid #CCCCCC;
+          color: #363636;
+          float: left;
+          font-size: 11px;
+          margin-left: 15px;
+          padding: 10px 10px 2px;
+      }
+      .content-main{
+      font-size: 13px;
+      }
+      .info-menu-bar {
+      background: none repeat scroll 0 0 #000000;
+      font-size: 12px;
+      height: 30px;
+      margin-top: -29px;
+      opacity: 0.6;
+      }
+      .info-menu-text {
       float: left;
-      width: 180px;
-      margin-left: 20px;
-      margin-right: 10px;
-      margin-top: 12px;
-      color: #363636;
-      }
-      .font-label {
-      font-size: 18px;
+      color: #fff;
       font-weight: bold;
+      font-size: 12px;
+      margin-left: 15px;
+      margin-top: 5px;
       }
-      .info-room {
-      float: left;
-      width: 160px;
-      color: #363636;
-      padding: 10px;
-      margin-top: 12px;
+      .info-menu-icon {
+      float: right;
+      color: #fff;
+      font-weight: bold;
+      font-size: 12px;
+      margin-right: 15px;
+      margin-top: 10px;
       }
-      .standard {
-      border-radius: 5px 5px 5px 5px;
-      height: 97px;
-      width: 150px;
+      .container-main-footer {
+      margin: -14px auto;
+      width: 760px;
+      }
+      #footer {
       color: black;
+      font-size: 12px;
+      height: 50px;
       }
-      .image-frame {
-      border: 1px solid #FFFFFF;
-      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
-      overflow: hidden;
+      #footer-info {
+      float: left;
+      margin-left: 40px;
+      margin-top: 14px;
       }
-      .image-frame a {
+      #footer-menu {
+      float: right;
+      margin-right: 70px;
+      margin-top: 14px;
+      }
+      #footer-menu ul {
+      color: black;
+      list-style: none outside none;
+      margin: 0;
+      padding: 0;
+      }
+      #footer-menu ul li {
+      float: left;
+      margin-left: 10px;
+      }
+      .al:link {
       text-decoration: none;
       }
-      .info-room-label {
-      color: #da251c;
-      font-size: 18px;
+      .al {
+          color: #fff;
       }
-      .info-room-info {
-      font-size: 15px;
-      font-style: italic;
-      }
-      .info-room-detail {
-      font-size: 11px;
-      }
-      .red{
-        color: #faddde;
-        border: solid 1px #980c10;
-        background: -moz-linear-gradient(top, #ed1c24, #aa1317);
-      }
-      .button{
-        display: inline-block;
-        vertical-align: baseline;
-        margin: 0 2px;
-        outline: none;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        font:  11px/100% Arial,Helvetica,sans-serif;
-        padding: .5em 1em .55em;
-      }
+      .well-lg{
+      margin: auto;
+      width: 760px;
+      background-color: grey;
+      }   
       </style>
   </head>
     <body>
       <div class="container">
+        <div class="container-main con-child">
+          <div class="container-main-header-child">
+            <div id="logo"><a href="Riyanhotel1.html"><img src="ry.jpg"width="100"></a></div>
+            <div id="header-menu">
+              <ul>
+                <li><a href="hotel.html" class="al al-bold">Hotel</a></li>
+                <li><a href="Residen.html" class="al al-bold">Residence</a></li>
+                <li><a href="fasilitas.html" class="al al-bold">Facilities</a></li>
+                <li><a href="lokasi.html" class="al al-bold">Location</a></li>
+                <li><a href="galery.html" class="al al-bold">Gallery</a></li>
+                <li><a href="" class="al al-bold"></a></li>
+              </ul>
+              <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+          </div> 
           <div class="container-main con-parent">
-                  <div class="container-main-header">
-                    <div id="logo"><a href="./"><img src="ry.jpg"width="100"></a></div>
-                    <div id="header-menu">
-                      <ul>
-                        <li><a href="" class="al al-bold">Hotel</a></li>
-                        <li><a href="" class="al al-bold">Residence</a></li>
-                        <li><a href="" class="al al-bold">Facilities</a></li>
-                        <li><a href="" class="al al-bold">Location</a></li>
-                        <li><a href="" class="al al-bold">Gallery</a></li>
-                        <li><a href="" class="al al-bold">Promotion</a></li>
-                      </ul>
-                      <div class="clear"></div>
-                    </div>
-                    <div class="clear"></div>
+            <div style="color: #rgb(248, 239, 238);"><h1>The Riyan Homes Hotel</h1></div>
+            <div>
+              <ul class="breadcrumb">
+                <li><a href="Riyanhotel1.html">Home</a></li>
+                <li><a href="#"><b>Hotel</b></a></li>
+              </ul>
+            </div>
+            <div class="image-frame big">
+              <img src="rc.jpg">
+              <div id="head-bar">
+                <div id="menu-nav">
+                  <div id="button-room" class="menu-nav-icon">
+                    <img src="camera.png">
                   </div>
-                  <div id="slider">
-                    <div id="button-slide-left">
-                      <a id="prev" href="#">
-                        <img src="pe.png"></img>
-                      </a>
-                    </div>
-                    <div id="button-slide-right">
-                      <a id="next" href="#">
-                        <img src="p.png"></img>
-                      </a>
-                    </div>
-                    <div id="slide-image" style="display: block; background: transparent url(k.jpg") no-repeat scroll center center;opacity:"0,93849374">
-                    </div>
-                    <div id="slide-bar">   
-                      <div id="menu-nav-index">
-                        <div class="menu-nav- text-index">
-                          <!-- <h1>the riyan homes hotel</h1> -->
+                  <div class="bar-info standard-text">Front View of The Cherry Homes Hotel</div>
+                  <div class="clear"></div>
+                </div>
+                <div id="bar-info-caption">
+                  We have the right facilities to meet your business travel needs
+                </div>
+                <div class="clear"></div>
+              </div>
+            </div>
+            <div class="clear"></div>
+            <div id="content-main">
+              <div>
+                <p>
+                  Perfectly situated properties offering levels of service, accommodation, comfort and cuisine that stretch expectation, all with more than a hint of individuality. Suitable for business or leisure with facilities that provides ideal venues for weddings, ceremonies, conferences and meetings.
+                </p>
+                <p>
+                  With two common type (studio and standard) and more than five different room combination, there's always a place for you at Cherry Homes.
+                </p>
+                <p>
+                  <span style="font-style: italic; color: black">Meeting, Conference, Training and Business Travel</span>. Whether you plan to meet or held a seminar, chances are we have the right facilities to meet your business travel needs
+                </p>
+              </div>
+              <div class="caption-text-small">Room Types</div>
+              <div id="box-container">
+                <div class="box-info fixed-height">
+                  <div class="image-frame extra-large">
+                    <img src="a.jpg">
+                      <div class="info-menu-bar">
+                        <div class="info-menu-text">Deluxe Room</div>
+                        <div class="info-menu-icon">
                         </div>
                         <div class="clear"></div>
                       </div>
-                      <div class="clear"></div>
-                    </div>
-                    <div id="panel-container-book" class="panel-container">
-                      <div id="panel-book-show">
-                        <div class="panel-book-form">
-                           <strong>Booking Room: </strong>
-                          <select id="roomform" class="panel-book-input-show select">
-                            <option value="">chose your room</option>
-                            <option value="47-57">new standar room</option>
-                            <option value="46-56">new deluxe room</option>
-                            <option value="48-58">executive room</option>
-                          </select>
-                        </div>
-                        <div class="panel-book-form">
-                          <input id="dtpickto" class="panel-book-input-show date hasDatepicker" placeholder="from="type="text"></input>
-                          <input id="dtpickfrom" class="panel-book-input-show date hasDatepicker" placeholder="to="type="text"></input>
-                        </div>
-                        <div style="position: absolute; top: 46px; color: rgb(255, 255, 255); font-weight :bold; width: 105px; left: 188px;">
-                          <a id="booknow" class="button red" href="#">Book Now</a>
-                          <!-- <br><img src="asset/favicon.ico" width="10px" height="10px">travel kota.com//-->
-                        </div>     
-                      </div>
-                    </div>
-                    <div class="clear"></div>
                   </div>
-                  <div id="info">
-                    <div id="info-header">
-                      <p>Situated close to the Pasteur toll road, airport Husein Sastranegara and University of Maranatha.
-                      The Cherry Homes Hotel and Residence is the ideal hotel if you are staying in Bandung for business or pleasure. </p>
-                    </div>
-                    <div id="info-left">
-                      <div class="font-label">amazing low prices!!!</div>
-                      <p>We offer both daily hotel room for rental, and studio apartment for monthly usage suitable for those who are going to University or working in Bandung for temporarily. Check our budget accommodation service hotel with amazing low prices.
-                      <br></br>
-                      </p>
-                    </div>
-                    <div class="info-room">
-                      <div class="image-frame standard">
-                        <a href="">
-                          <img src="ne.jpg"></img>
-                        </a>
+                  <br>
+                  <p class="info-room-detail">
+                    Efficient room type for most business people that keep moving, or for those who want to enjoy their stay at our express hotel. Regardless your needs, our deluxe room can easily meet your needs!! 
+                  </p>
+                </div>
+                <div class="box-info fixed-height">
+                  <div class="image-frame extra-large">
+                    <img src="b.jpg">
+                      <div class="info-menu-bar">
+                        <div class="info-menu-text">New Deluxe Room</div>
+                        <div class="info-menu-icon">
+                        </div>
+                        <div class="clear"></div>
                       </div>
-                      <br></br>
-                      <div class="info-room-label">
-                        <a href="">
-                          New deluxe room
-                        </a>
-                      </div>
-                      <div class="info-room-info"> a comportable solution</div>
-                      <p class="info-room-detail">Efficient room type for most business people that keep moving, or for those who want to enjoy their stay at our express hotel. Regardless your needs, our deluxe room can easily meet your needs!!</p>
-                      <p>
-                        <img src="pot.png"></img>
-                      </p>
-                      <p>
-                        <a class="button red" href="#">read more</a>
-                      </p>
-                    </div>
-                    <div class="info-room">
-                      <div class="image-frame standard">
-                        <a href="">
-                          <img src="new.jpg"></img>
-                        </a>
-                      </div>
-                      <br></br>
-                      <div class="info-room-label">
-                        <a href="">
-                          New deluxe room
-                        </a>
-                      </div>
-                      <div class="info-room-info"> a comportable solution</div>
-                      <p class="info-room-detail">Efficient room type for most business people that keep moving, or for those who want to enjoy their stay at our express hotel. Regardless your needs, our deluxe room can easily meet your needs!!</p>
-                      <p>
-                        <img src="pot.png"></img>
-                      </p>
-                      <p>
-                        <a class="button red" href="#">read more</a>
-                      </p>
-                    </div>
-                    <div class="info-room">
-                      <div class="image-frame standard">
-                        <a href="">
-                          <img src="neww.jpg"></img>
-                        </a>
-                      </div>
-                      <br></br>
-                      <div class="info-room-label">
-                        <a href="">
-                          New deluxe room
-                        </a>
-                      </div>
-                      <div class="info-room-info"> a comportable solution</div>
-                      <p class="info-room-detail">Efficient room type for most business people that keep moving, or for those who want to enjoy their stay at our express hotel. Regardless your needs, our deluxe room can easily meet your needs!!</p>
-                      <p>
-                        <img src="pot.png"></img>
-                      </p>
-                      <p>
-                        <a class="button red" href="#">read more</a>
-                      </p>
-                    </div>
-                    <div class="clear"></div>
                   </div>
+                  <br>
+                  <p class="info-room-detail">
+                    Newly renovated rooms that will suit most of the business and family travelers. Modern design and quite room will ease your travel experience and makes one felt at home.
+                  </p>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div>&nbsp;</div>
+              <div id="box-container">
+                <div class="box-info fixed-height">
+                  <div class="image-frame extra-large">
+                    <img src="c.jpg">
+                      <div class="info-menu-bar">
+                        <div class="info-menu-text">Standard Room</div>
+                        <div class="info-menu-icon">
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                  </div>
+                  <br>
+                  <p class="info-room-detail">
+                    Petite room for those looking for a budget accommodation solution without sacrificing perfect cleanliness and hygiene. Students or budget travelers, this is your best solution!!
+                  </p>
+                </div>
+                <div class="box-info fixed-height">
+                  <div class="image-frame extra-large">
+                    <img src="d.jpg">
+                      <div class="info-menu-bar">
+                        <div class="info-menu-text">Executive Room</div>
+                        <div class="info-menu-icon">
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                  </div>
+                  <br>
+                  <p class="info-room-detail">
+                    A larger room provided for family accommodation needs, the executive rooms contain one small powder room and a much larger bathroom compared with any other room in The Cherry Homes Hotel and Residence.
+                  </p>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div>
+                <p>&nbsp;</p>
+              </div>
+            </div>
           </div>
-      <div>
+        </div>
+        <div class="row">
+      
+          <div class="well well-lg">
+            
+            <div class="container-main-footer">
+              <div id="footer">
+                <div id="footer-info">Copyright © 2016-2021 The Riyanz Homes Hotel. All rights reserved.</div>
+                <div id="footer-menu">
+                  <ul>
+                   Di buat di bandung 2016
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        
+      </div>
     </body>
 </html> 
